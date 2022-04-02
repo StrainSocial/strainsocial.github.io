@@ -12,7 +12,6 @@
       flex-direction: column;
   }
   
-  .info ul,
   .socials ul {
       display: flex;
       justify-content: space-evenly;
@@ -35,11 +34,6 @@
                   0 5px 10px rgba(0,0,0,.35),
                   0 10px 10px rgba(0,0,0,.3),
                   0 20px 20px rgba(0,0,0,.25);
-  }
-  
-  .info ul li {
-      margin: 0 18px;
-      letter-spacing: 1px;
   }
   
   .socials ul {
@@ -97,12 +91,6 @@
           width: 45px;
           height: 45px;
       }
-  
-      .info ul li {
-          margin: 0 9px;
-          letter-spacing: 1px;
-          font-size: 14px;
-      }
   }
   
   @media (max-width: 460px) {
@@ -119,11 +107,7 @@
           font-size: 38px;
           justify-content: center;
       }
-  
-      .info ul {
-          flex-wrap: wrap;
-          justify-content: center;
-      }
+
   
       .socials ul li {
           font-size: 17px;
@@ -214,13 +198,23 @@
       padding-top: 10px;
       padding-bottom: 10px;
     }
+    .main p {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  color: #eee;
+  margin: 0 18px;
+  letter-spacing: 1px;
+  font-size: larger;
+}
     </style>
 <html lang="en" dir="ltr">
     <link rel="shortcut icon" type="images/png" href="assets/pictures/Favicon.png">
     <div class="navbar">
-      <a href="/" class="active">Home</a>
+      <a href="/">Home</a>
       <a target="_self" href="/aboutme.html" title="About me">About me</a>
       <a target="_self" href="/socials.html" title="Socials">Socials</a>
+      <a target="_self" class="active" href="/contact.html" title="Contact">Contact</a>
       <img src="assets/pictures/Favicon.png" style="width:100px;height: 100px;">
     </div>
     <head>
@@ -228,7 +222,7 @@
       <title>Strain Social's Webpage</title>
       <meta content="Strain Social" property="og:title">
       <meta content="Strain Social's Webpage" property="og:site_name">
-      <meta content="Come check out my AboutMe page!" property="og:description">
+      <meta content="Come check out my Contact page!" property="og:description">
       <meta content="assets/Pictures/Favicon.png" property='og:image'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="assets/script.js"></script>
@@ -241,13 +235,14 @@
         <h1>About Me</h1>
         <div class="info">
           <ul>
-            <li>Hi, Im StrainSocial</li>
+            <p>Wanna Contact me?</p>
+            <p>Click the button below to Email me!, Or you can dm me on Discordㅤ|ㅤ<a onClick="a();" style="cursor: pointer; cursor: hand;">StrainSocial#7579</a></p>
           </ul>
         </div>
         <div class="socials">
           <ul>
-            <a target="_self" href="/aboutme.html" title="About me"><li><i class="fa-solid fa-user"></i></li></a>
-            <a target="_self" href="/socials.html" title="Socials"><li><i class="fa-solid fa-share-nodes"></i></li></a>
+            <a href = "mailto: aresgamingandgacha@gmail.com" title="Send Email"><li><i class="fa-solid fa-envelope"></i></li></a>
+            <a target="_self" href="/" title="Home"><li><i class="fas fa-home"></i></li></a>
           </ul>
     </body>
   </html>  
